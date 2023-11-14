@@ -1,3 +1,5 @@
+// 將複雜array處理成1個array
+
 const arr = [[[["a", [["b", ["c"]], "d"]]], [["e"]], [[["f", "g", "h"]]]]];
 
 function collector(arr1) {

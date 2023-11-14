@@ -1,3 +1,5 @@
+// 將size個連續數字相加，找出最大的數跟最小的數
+
 maxSum([2, 7, 3, 0, 6, 1, -5, -12, -11], 3); // 12
 minSum([2, 7, 3, 0, 6, 1, -5, -12, -11], 3); // -28
 
@@ -34,9 +36,6 @@ function minSum(arr, size) {
   }
   return min_value;
 }
-
-console.log(maxSum([2, 7, 3, 0, 6, 1, -5, -12, -11], 3));
-console.log(minSum([2, 7, 3, 0, 6, 1, -5, -12, -11], 3));
 
 // 使用別的寫法，讓時間複雜度降低
 function maxSum1(arr, size) {

@@ -1,3 +1,5 @@
+// 將連續的數字相加到大於num的最短長度(連續最少)
+
 function minSubLength(arr, num) {
   let minLength = Infinity;
   let left = 0;
