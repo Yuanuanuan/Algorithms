@@ -37,6 +37,25 @@ function minSum(arr, size) {
   return min_value;
 }
 
+function test(arr, size) {
+  let left = 0;
+  let right = size - 1;
+  let max = -Infinity;
+
+  while(right < arr.length) {
+    let count = 0;
+    for (let i = left; i <= right; i++) {
+      count += arr[i];
+    }
+    count > max ? max = count : null;
+    right++;
+    left++;
+  }
+
+  return max;
+}
+console.log(test([2, 7, 3, 0, 6, 1, -5, -12, -11], 3));
+
 // 使用別的寫法，讓時間複雜度降低
 function maxSum1(arr, size) {
   if (size > arr.length) return null;
@@ -57,4 +76,4 @@ function maxSum1(arr, size) {
   return max_value;
 }
 
-console.log(maxSum1([2, 7, 3, 0, 6, 1, -5, -12, -11], 3));
+// console.log(maxSum1([2, 7, 3, 0, 6, 1, -5, -12, -11], 3));
