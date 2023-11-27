@@ -1,3 +1,7 @@
+// Worst Case Performance: O(n)
+// Best Case Performance: O(1)
+// Average Case Performance: O(logn)
+
 class Node {
   constructor(key) {
     this.key = key;
